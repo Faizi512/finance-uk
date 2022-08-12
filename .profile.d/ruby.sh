@@ -1,0 +1,14 @@
+export LANG=${LANG:-en_US.UTF-8}
+export GEM_PATH="$HOME/vendor/bundle/ruby/2.7.0:$GEM_PATH"
+export PATH="$HOME/vendor/yarn-v1.22.17/bin/:$HOME/bin:$HOME/vendor/bundle/bin:$HOME/vendor/bundle/ruby/2.7.0/bin:$PATH"
+export DISABLE_SPRING="1"
+export MALLOC_ARENA_MAX=${MALLOC_ARENA_MAX:-2}
+export BUNDLE_PATH=${BUNDLE_PATH:-vendor/bundle}
+export BUNDLE_WITHOUT=${BUNDLE_WITHOUT:-development:test}
+export BUNDLE_BIN=${BUNDLE_BIN:-vendor/bundle/bin}
+export BUNDLE_DEPLOYMENT=${BUNDLE_DEPLOYMENT:-1}
+export RAILS_ENV=${RAILS_ENV:-production}
+export RACK_ENV=${RACK_ENV:-production}
+export SECRET_KEY_BASE=${SECRET_KEY_BASE:-dc1f29139b5bf685832110be614c4e038754747899bcbf1d869f636e208e68509bdcf8ac6186009a3561e1f6b6ed6903a8d6e059957bace45330c556ef1fd143}
+export RAILS_SERVE_STATIC_FILES=${RAILS_SERVE_STATIC_FILES:-enabled}
+export RAILS_LOG_TO_STDOUT=${RAILS_LOG_TO_STDOUT:-enabled}

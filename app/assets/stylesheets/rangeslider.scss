@@ -1,0 +1,109 @@
+.rangeslider__value-bubble {
+    bottom: 15px !important;
+}
+
+.rangeouter {
+    margin-top: 60px !important;
+}
+.rangeslider,
+.rangeslider__fill {
+    display: block;
+    border: 1px solid #dedcdc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px
+}
+
+
+.rangeslider {
+    background: #fff;
+    position: relative
+}
+
+.rangeslider--horizontal {
+    height: 14px;
+    width: 100%;
+    padding: 0 6px
+}
+
+.rangeslider--vertical {
+    width: 20px;
+    min-height: 150px;
+    max-height: 100%
+}
+
+.rangeslider__fill {
+    background: #5bbe54;
+    position: absolute
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+    top: 3px;
+    height: 6px
+}
+
+.rangeslider--vertical .rangeslider__fill {
+    bottom: 0;
+    width: 100%
+}
+
+.rangeslider__handle {
+    background: #08677d;
+    cursor: pointer;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-size: 100%;
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%
+}
+
+.rangeslider__handle:after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:#5bbe54;
+    background-size: 100%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%
+}
+
+.rangeslider--active .rangeslider__handle,
+.rangeslider__handle:active {
+    background: #08677d;
+    background-size: 100%
+}
+
+.rangeslider--horizontal .rangeslider__handle {
+    top: -14px;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y
+}
+
+.rangeslider--vertical .rangeslider__handle {
+    left: -10px;
+    touch-action: pan-x;
+    -ms-touch-action: pan-x
+}
+
+input[type=range]:focus+.rangeslider .rangeslider__handle {
+    -moz-box-shadow: 0 0 8px rgba(255, 0, 255, .9);
+    -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, .9);
+    box-shadow: 0 0 8px rgba(255, 0, 255, .9)
+}
+.rangeouter {
+    margin-bottom: 25px !important;
+}

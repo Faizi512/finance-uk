@@ -1,0 +1,74 @@
+.top-head{
+	background-image: image-url('loan-banner.png');
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  left;
+}
+.why-sec-img{
+	width: 80px;
+}
+.max-w{
+	max-width: 100% !important;
+}
+.why-sec-color{
+	background: #07647d24;
+}
+.img-bc{
+	  padding-bottom: 100px;
+    background-color: #2A7AB0;
+    background: image-url('blue_wave.svg');
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+}
+.txt-green{
+	color: #5bbe54;
+}
+.txt-blu{
+  color: #08677d;
+}
+.fs-fw{
+	font-size: 24px;
+  font-weight: 200;
+}
+.text-apr{
+  line-height: 1.4;
+}
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal2-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 85%;
+  border-radius: 5px;
+}
+.close-b{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close-b:hover,
+.close-b:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

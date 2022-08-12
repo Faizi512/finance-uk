@@ -1,0 +1,202 @@
+<%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload', defer: true %>
+<%= render 'layouts/common/header' %>
+
+<div class="top-head">
+	<div class="row align-items-end justify-content-center w-100 mx-0 flex-sm-row-reverse">
+		<div class="col-md-6">
+			<h1 class="text-white mt-2 fs-23 text-center">BORROW UP TO <span class="txt-green"> £5000* </span> FROM A DIRECT LENDER</h1>
+		</div>
+		<div class="col-md-5">
+			 <form action="/apply-google"
+        data-parsley-validate=""
+        id="dealform">
+        <div class="formouter my-3">
+          <h4 class="text-center text-uppercase txt-blu">I want to borrow</h4>
+          <div class="rangeouter">
+            <input type="range" class="loan_amount" value="550"  name="loan_amount"  min="100" max="5000">
+          </div>
+          <h4 class="text-center text-uppercase txt-blu">Over how many months?</h4>
+          <ul>
+            <li>
+              <label>3
+              <input type="radio" name="loan_duration_months" value="3"class="radiobtn">
+              </label>
+            </li>
+            <li>
+              <label>6
+              <input type="radio" name="loan_duration_months" value="6"class="radiobtn">
+              </label>
+            </li>
+            <li class="active">
+              <label>12
+              <input type="radio" name="loan_duration_months" value="12"class="radiobtn">
+              </label>
+            </li>
+            <li>
+              <label>15
+              <input type="radio" name="loan_duration_months" value="15"class="radiobtn">
+              </label>
+            </li>
+            <li>
+              <label>18
+              <input type="radio" name="loan_duration_months" value="18"class="radiobtn">
+              </label>
+            </li>
+            <li>
+              <label>24
+              <input type="radio" name="loan_duration_months" value="24"class="radiobtn">
+              </label>
+            </li>
+            <li>
+              <label>36
+              <input type="radio" name="loan_duration_months" value="36"class="radiobtn">
+              </label>
+            </li>
+          </ul>
+          <h4 class="text-center text-uppercase txt-blu">Email Address</h4>
+          <div class="form-group text-center">
+            <input
+            type="email"
+            class="form-control email pre-pop"
+            name="email"
+            placeholder="Enter Your Email"
+            data-parsley-required="true"
+            data-parsley-required-message="Please Enter Valid Email Address"
+            data-parsley-validemail
+            required="">
+          </div>
+          <input type="hidden" name="tPar[optIn]" class="optinUrl">
+          <input type="hidden" name="source" class="source">
+          <input type="hidden" name="clickid" class="clickid" value="<%= params[:clickid] %>">
+          <div class="text-center">
+            <a href="#dealform" data-turbolinks="false">
+              <input type="submit" class="btn-default font-weight-bold text-white" value="GET MY QUOTE!" >
+            </a>
+          </div>
+          <div class="text-center">
+            <p class="small text-apr mt-2 mb-0">
+              Rates from 43.1% APR to 1333% APR. Minimum Loan Length is 1 month. Maximum Loan Length is 36 months. Representative Example: £1,200 borrowed for up to 75 days. Total amount repayable is: £1506. Interest charged is 0.34% per day, amounting to £306, annual interest rate of 124% (variable). Representative APR: 49.7% (variable).
+            </p>
+          </div>
+        </div>
+      </form>
+		</div>
+	</div>
+</div>
+<div class="why-sec-color">
+	<div class="container py-md-5 py-3">
+		<div class="row w-100 mx-0 align-items-center justify-content-center">
+			<div class="text-center">
+				<h1 class="font-weight-bold">Why FinanceInUK.com?</h1>
+				<p>
+					We’ve all been in situations where we’ve been short on cash or need money but can’t borrow from our bank. When you need money fast, it can be very time consuming comparing and applying with all the lenders out there.
+				</p>
+			</div>
+
+			<div class="col-md-4 text-center">
+				<%=image_tag("same_day_deposit.png", class:"why-sec-img") %>
+				<h4>Same-Day Deposit Available</h4>
+				<p>Get an instant decision when you need it most</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<%=image_tag("instant_decision.png", class:"why-sec-img") %>
+				<h4>Instant Decision*</h4>
+				<p>Receive an immediate decision</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<%=image_tag("quick_application.png", class:"why-sec-img") %>
+				<h4>Quick Application</h4>
+				<p>Apply online in minutes</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container my-md-5 my-3">
+	<h1 class="text-center font-weight-bold mb-0">So, How Does This Work?</h1>
+	<p class="text-center txt-green fs-fw">Can I really borrow up to £5000 today?</p>
+	<%=image_tag("work.png", class:"how-works-img max-w d-none d-md-block") %>
+	<%=image_tag("work-mobile.png", class:"how-works-img max-w d-md-none d-block") %>
+</div>
+
+<div class="img-bc">
+	<div class="container">
+		<div class="row w-100 mx-0 align-items-start justify-content-center">
+			<div class="col-md-7 mt-md-5 mt-3">
+				<h2 class="font-weight-bold text-left text-white">Find out why our customers love us</h2>
+				<p class="text-white">
+					From the very beginning, we’ve worked hard to create a gold-standard for fair borrowing. We committed to full transparency, higher acceptance rates and fair and flexible loan repayments. We understand how frustrating it can be when lenders repeatedly decline your loan application. This won’t happen again if you meet our affordability criteria before you apply. financeinuk is a broker and not a lender
+				</p>
+				<div class="text-center pt-5">
+          <a href="#dealform" data-turbolinks="false">
+            <input type="button" class="btn-default font-weight-bold text-white" value="GET MY QUOTE!" >
+          </a>
+        </div>
+			</div>
+			<div class="col-md-5 text-center py-5">
+				<%=image_tag("happy_couple.png", class:"max-w") %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="faqsec section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div class="accordion">
+          <h6>How does FinanceinUK.com work?</h6>
+          <div>
+            <p>FinanceinUK.com is a broker, not a lender, and works with an exclusive range of lenders in return for a commission fee. We don’t directly offer loans. We allow customers to access our network of UK short term and installment lenders through our online form. We match customers with lenders in our network.</p>
+          </div>
+          <h6>How much can I borrow?</h6>
+          <div>
+            <p>You could borrow between £100 and £5000.</p>
+          </div>
+          <h6>What different types of loans do your lenders offer?</h6>
+          <div>
+            <p>There are a variety of loans available for consumers. It’s important to understand the differences between them to see which one best suits your individual needs. Guarantor loans include an additional person on the loan, such as a friend or family member, who agree to repay the loan should the borrower miss a payment. Short term loans are small (usually under £1,000), no-collateral cash advances that are backed by future income. Personal unsecured loans are loans that are not secured against your assets, meaning they don’t require any form of collateral. Instalment loans can range up to several months and payments are spread out over the term of the loan.</p>
+          </div>
+          <h6>How long does it take to apply and receive funds?</h6>
+          <div>
+            <p>The online application takes a few minutes to complete. FinanceinUK.com will then run your application through our network of lenders in an attempt to match you with a qualified lender. This process takes minutes. If your application is accepted, you will be forwarded to the lender’s completion page so that you can sign for your loan electronically.</p>
+          </div>
+          <h6>How will I receive my funds?</h6>
+          <div>
+            <p>Your funds will be transferred electronically into your bank account via electronic transfer.</p>
+          </div>
+          <h6>If approved for a loan by an independent third party lender, how quickly could I receive it?</h6>
+          <div>
+            <p>In most cases, if you are accepted by a lender, the transfer into your bank account could happen as early as the next business day. This will vary depending upon your lender as well as your financial institution. If you have additional questions regarding the transfer time, please contact your lender.</p>
+          </div>
+          <h6>What are the eligibility criteria?</h6>
+          <div>
+            <p>The eligibility criteria varies by lender. There are, however, standard criteria requirements that you will be expected to meet in order to apply. This includes the fact that you must be aged 18 years or older, live in the UK, have an active bank account into which you can receive direct debits and have a regular source of income.</p>
+          </div>
+          <h6>Why do you require my personal information?</h6>
+          <div>
+            <p>We require your personal information in order to present your application to our lenders so they can assist you by providing you a loan. Please refer to our Privacy Policy for more details about how we use your personal information.</p>
+          </div>
+          <h6>Will you check my credit score?</h6>
+          <div>
+            <p>FinanceinUK.com does not run any credit checks; however, we are a matching service and the lender we match you with may do so as part of the application process.</p>
+          </div>
+          <h6>What is your Representative APR?</h6>
+          <div>
+            <p>
+              Rates from 43.1% APR to 1333% APR. Minimum Loan Length is 1 month. Maximum Loan Length is 36 months. Representative Example: £1,200 borrowed for up to 75 days. Total amount repayable is: £1506. Interest charged is 0.34% per day, amounting to £306, annual interest rate of 124% (variable). Representative APR: 49.7% (variable).
+            </p>
+          </div>
+          <h6>What should I do if I have problems repaying?</h6>
+          <div>
+            <p>If you have any issues repaying your loan, please contact your lender directly. They will be able to discuss repayment options with you. If you have more serious concerns about managing your money, you may contact Money Advice Service (www.moneyadviceservice.org.uk). Money Advice Service offers free advice to those who need to manage their money more effectively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render 'layouts/common/footer' %>
+<%= render 'layouts/common/partners-poupup'%>
